@@ -13,3 +13,10 @@ TECHNOLOGIES = [
     "Pygame", "Pandas", "NumPy", "SciPy", "SymPy", "ML", "CI/CD", "GIT",
     "GitHub", "JavaScript", "React",
 ]
+
+
+def safe_extract(func, *args, **kwargs):
+    try:
+        return func(*args, **kwargs)
+    except AttributeError:
+        return None
