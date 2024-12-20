@@ -63,6 +63,7 @@ class WorkUaScraper:
         }
 
     def _get_next_page(self) -> str | None:
+        self._fetch_page(self.url)
         pagination = self.soup.find("ul", class_="pagination")
         if pagination:
             next_str = pagination.find(string="Наступна")
@@ -73,8 +74,7 @@ class WorkUaScraper:
             )
             if next_page_tag:
                 return self.BASE_URL + next_page_tag.get("href")
-            else:
-                return None
+        return None
 
     def get_job_list(self) -> list[dict]:
         job_list = []
