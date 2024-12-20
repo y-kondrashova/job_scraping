@@ -1,3 +1,5 @@
+from selenium.common import NoSuchElementException
+
 TECHNOLOGIES = [
     "Python", "Django", "Web API", "Flask", "FastAPI", "Pyramid", "Tornado",
     "Bottle", "AWS", "RoboDK", "API", "Azure", "Google Cloud Platform",
@@ -18,5 +20,5 @@ TECHNOLOGIES = [
 def safe_extract(func, *args, **kwargs):
     try:
         return func(*args, **kwargs)
-    except AttributeError:
+    except (AttributeError, NoSuchElementException):
         return None
