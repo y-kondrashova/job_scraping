@@ -25,7 +25,7 @@ git clone https://github.com/y-kondrashova/job_scraping.git
 
 ```shell
 
-cd job_sctoping
+cd job_scraping
 ```
 
 ### 3. Create virtual environment
