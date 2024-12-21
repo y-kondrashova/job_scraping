@@ -76,7 +76,7 @@ jupyter notebook main.ipynb
 
 ## Notes
 
-- Make sure you have Python 3.7+ installed.
+- Make sure you have **Python 3.7+** installed.
 - Ensure that your internet connection is stable during the scraping process.
-- Install Jupyter Notebook if it is not already available on your system.
+- Install **Jupyter Notebook** if it is not already available on your system.
 
